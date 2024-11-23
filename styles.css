@@ -63,14 +63,71 @@ body {
 
 
 
-.icon-image {
+/* Target by ID */
+#text {
+    width: 80%;
+    padding: 10px;
+    font-size: 16px;
+    /* Set font size */
+    border: 2px solid #ccc;
+    /* Set border style */
+    border-radius: 5px;
+    /* Add rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Add shadow for depth */
+    transition: border-color 0.3s ease;
+    /* Smooth border color change */
+}
+
+/* On focus (when the input is clicked or active) */
+#text:focus {
+    border-color: #007bff;
+    /* Highlight border in blue */
+    outline: none;
+    /* Remove default outline */
+}
+
+/* Target by class */
+.type_msg {
+    color: #333;
+    /* Set text color */
+    background-color: #f9f9f9;
+    /* Set background color */
+}
+
+/* Add required field styling */
+#text:invalid {
+    border-color: #e74c3c;
+    /* Highlight border in red if invalid */
+}
+
+#text:valid {
+    border-color: #2ecc71;
+    /* Highlight border in green if valid */
+}
+
+.top-left-img {
+    position: absolute;
+    top: 10px;
+    /* Adjust distance from the top */
+    left: 10px;
+    /* Adjust distance from the left */
     width: 150px;
-    /* Set a specific width for the image */
+    /* Set the desired image width */
     height: auto;
-    /* Maintain the image's aspect ratio */
-    border-radius: 15px;
-    /* Optional: adds rounded corners */
-    border: black;
-    border-style: solid;
-    background-color: #e2eef8;
+    /* Maintain aspect ratio */
+}
+
+.bottom-box {
+    position: absolute;
+    bottom: 10px;
+    /* Distance from the bottom */
+    width: 100%;
+    /* Full width of the container */
+    display: flex;
+    justify-content: center;
+    /* Center the input horizontally */
+    padding: 20px;
+    /* Add some padding */
+    right: 110px;
 }
