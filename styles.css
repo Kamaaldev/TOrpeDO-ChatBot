@@ -131,3 +131,18 @@ body {
     /* Add some padding */
     right: 110px;
 }
+
+#Midtext {
+    position: absolute;
+    top: 320px;
+    left: 110px;
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 25px;
+    text-shadow: 2px 2px 2px #80c1f9;
+}
+
+#ListText {
+    font-family: "Sour Gummy", sans-serif;
+    font-size: 40px;
+    text-shadow: 2px 2px 2px #f98080;
+}
